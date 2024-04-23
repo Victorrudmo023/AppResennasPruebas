@@ -1,0 +1,3 @@
+[build]
+  command = "npm install && npm install concurrently --save-dev && npm install --save html2pdf.js && npm install leaflet && npm install xlsx && npm install jspdf && npm start"
+  publish = "build"  # Asegúrate de ajustar esto según la carpeta donde se genera tu aplicación
