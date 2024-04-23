@@ -6,7 +6,6 @@ import { useAuth } from './components/Context/AuthProvider';
 import { BrowserRouter, NavLink, Route, Routes } from 'react-router-dom';
 import LoginForm from './components/login/LoginForm';
 import ErrorComponent from './components/rutas/ErrorComponent';
-import Info from './components/Info/Info';
 import PrivateRoute from './components/login/PrivateRoute';
 import RegisterForm from './components/login/RegisterForm';
 import {Link } from 'react-router-dom';
@@ -36,7 +35,6 @@ function App() {
           <Route path="/registro" element={<RegisterForm />} />
           <Route path="/" exact element={<><PrivateRoute>
             <ResennaList onDeleteResennna={onDeleteResennna} searchTerm={searchTerm} /></PrivateRoute></>} />
-          <Route path='/:resennaId' element={<PrivateRoute><Info /></PrivateRoute>} />
           <Route path="/nuevo" element={<PrivateRoute><ResennnaForm onSaveResennna={onSaveResennna} /></PrivateRoute>} />
           <Route path="*" element={<ErrorComponent />} />
         </Routes>
