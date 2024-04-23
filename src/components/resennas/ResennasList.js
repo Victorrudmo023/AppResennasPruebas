@@ -1,4 +1,3 @@
-import { useEffect, useState } from 'react';
 import Resennna from './Resenna';
 import React from 'react';
 import { getResenna } from '../../api/resennaApi';

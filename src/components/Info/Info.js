@@ -6,7 +6,7 @@ import { useParams } from 'react-router-dom';
 const Info = () => {
 
     const [resenna, setResennna] = useState({});
-    const [error, setError] = useState(false);
+    const [setError] = useState(false);
     const {resennaId} = useParams();
 
     const downloadResennna = async (resennaId) => {

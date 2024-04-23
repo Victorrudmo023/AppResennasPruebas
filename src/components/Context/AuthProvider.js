@@ -47,7 +47,7 @@ const login = async (email, password) => {
       console.log(response.data);
       const { accessToken, user } = response.data;
       localStorage.setItem('token', accessToken);
-      https://appresennas.netlify.appStorage.setItem('user', JSON.stringify(user));
+      localStorage.setItem('user', JSON.stringify(user));
       dispatch({ type: 'LOGIN_SUCCESS', payload: { user, accessToken } });
   } catch (error) {
       console.error("Error during login", error);

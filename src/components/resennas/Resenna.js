@@ -39,11 +39,6 @@ const Resennna = ({ resenna, onDeleteResennna, allResennas}) => {
     }
     setShowConfirmation(false); 
   }
-  
-  const handleResennaClick = (resenna) => {
-    setSelectedResennna(resenna);
-    setIsModalOpen(true);
-  };
 
   const handleCloseModal = () => {
     setIsModalOpen(false);
