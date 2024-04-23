@@ -240,7 +240,7 @@ const Resennna = ({ resenna, onDeleteResennna, allResennas}) => {
                 <p id='lineas'>Elev. Elipsoidal: <span className='der'>{resenna.elevElip}</span></p>
                 <p id='lineas' className="lineaFinal">Elev. Ortometrica EGM-08: <span className='der'>{resenna.elevOrto}</span></p>
               <p id="gris">OBSERVADO POR</p>
-              <img className='ofiteat' src="/images/ofiteat.svg"></img>
+              <img className='ofiteat' src="/images/ofiteat.svg" alt={null}></img>
               <p id='lineaFecha' className='fecha'>Observación: <span className='der'>{resenna.fecha}</span></p>
               <p id="gris">FOTOGRAFÍA GENERAL</p>
               <img id='image2' src={resenna.imagenGeneral} alt={null} />
